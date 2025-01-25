@@ -1,6 +1,6 @@
 import pandas as Gok
-
-data = Gok.read_excel('Source.xlsx')
+import streamlit as st
+data = Gok.read_excel('./pages/Source.xlsx')
 
 # print(data)
 # too find (down)
@@ -12,3 +12,4 @@ criteria5 = (criteria1) & (criteria2) & (criteria3) & (criteria4)
 
 # print(data[criteria5])
 print(data[criteria5].sort_values('price',ascending=True))
+st.dataframe(data)
