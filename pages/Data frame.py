@@ -1,7 +1,7 @@
 import pandas as Gok
 import streamlit as st
 data = Gok.read_excel('./pages/Source.xlsx')
-unique_category = data['category'].unique()
+unique_category = data['Category'].unique()
 selected_category = st.multiselect("Select Category",options=unique_category)
 
 
