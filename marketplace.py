@@ -3,7 +3,7 @@ import pandas as pd
 st.title("Every ahh store for no reason")
 col1, col2, col3 = st.columns(3)
 
-df = pd.read_excel('Source.xlsx')
+df = pd.read_excel('./pages/source.xlsx')
 with st.container(border=True):
         with col1:
             selected_Category = st.selectbox("Choose category",options=df['Category'].unique())
