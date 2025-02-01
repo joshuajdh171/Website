@@ -7,7 +7,7 @@ maximum_price = data['price'].min()
 minimum_price = data['price'].max()
 selected_category = st.multiselect("Select Category",options=unique_category)
 selected_store = st.multiselect("Select store",options=unique_storename)
-price_point = st.sider("price",min_value=minimum_price,max_value=maximum_price,value=maximum_price)
+price_point = st.slider("price",min_value=minimum_price,max_value=maximum_price,value=maximum_price)
 
                                
 # print(data)
