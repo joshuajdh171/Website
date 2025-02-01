@@ -14,7 +14,8 @@ price_point = st.slider("price",min_value=minimum_price,max_value=maximum_price,
 # too find (down)
 criteria1 = data['Category'].isin(selected_category)
 criteria2 = data['store'].isin(selected_store)
-join_criteria = (criteria1) & (criteria2)
+criteria3 = data['price'] <= price_point
+join_criteria = (criteria1) & (criteria2) & (criteria3)
 criteria3 = data['price'] > 1200
 criteria4 = (data['price'] >= 1200) & (data['price'] < 2070)
 criteria5 = (criteria1) & (criteria2) & (criteria3)
