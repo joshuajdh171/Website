@@ -23,7 +23,7 @@ join_criteria = (criteria1) & (criteria2) & (criteria3)
 with st.container(border=True):
   data = data[join_criteria]
   data_count = len(data)
-  for i in range(data_count)
+  for i in range(data_count):
     product_picture = data.iloc[i]['picture']
     st.image(product_picture)
 
