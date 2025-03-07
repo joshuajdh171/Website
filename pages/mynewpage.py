@@ -1,4 +1,8 @@
+
 import streamlit as st
+st.set_page_config(layout='wide')
+
+st.title('Fun Conversion App')
 
 conversion_factors = {
   'distance':{'mm':1,
@@ -49,10 +53,11 @@ with col1:
 
 with col2:
     input_value = st.number_input("Input",min_value=1,value=1)
-
+    
 with col3:
     base_unit_list = list(conversion_factors[category].keys())
     base_unit = st.radio("From:",options=base_unit_list)
+    base_cf = conversion_factors[category][base_unit]
 
 with col4:
     target_unit_list = list(conversion_factors[category].keys())
