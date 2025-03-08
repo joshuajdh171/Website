@@ -32,7 +32,7 @@ conversion_factors = {
             'penguin':1/1,
             'dolphin':1/300,
             'blue whale':1/199000,
-            'brontosaurus':1/17,
+            'brontosaurus':1/1700,
             't-rex':1/15000},
   'time':{'seconds':3600,
           'minutes':60,
