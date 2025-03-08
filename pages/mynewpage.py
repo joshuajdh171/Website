@@ -42,7 +42,7 @@ conversion_factors = {
           'month':1/(24*30),
           'year':1/(24*365),
           'cat year':1/(24*365*5),
-          'dog year':None}}
+          'dog year':1/(24*365*5)}}
 
 col1,col2,col3,col4,col5 = st.columns(5)
 
